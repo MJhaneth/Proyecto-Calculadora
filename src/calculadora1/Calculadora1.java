@@ -8,12 +8,6 @@ import java.io.IOException;
 /**
  * Inicia la aplicación de la calculadora mostrando la ventana principal
  * después de que el usuario haya iniciado sesión.
- * 
- * @author JHANETH MAMANI OLIVERA
- * @author DAVID MARTINEZ ANTEZANA
- * @author JHONATAN ORTUÑO CACERES
- * @author LUIS FERNANDO QUENA QUISPE
- * @author SARAI SUMEY AGUILA SANABRIA
  */
 public class Calculadora1 {
     
