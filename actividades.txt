@@ -1,0 +1,4 @@
+Usuario: david - Inicio de sesión exitoso - 2024-09-22T03:07:33.193765600
+Usuario:  - Intento fallido de inicio de sesión - 2024-09-22T10:41:57.102806500
+Usuario:  - Intento fallido de inicio de sesión - 2024-09-22T10:42:06.680540800
+Usuario:  - Intento fallido de inicio de sesión - 2024-09-22T10:42:27.545968100
