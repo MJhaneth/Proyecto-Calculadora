@@ -2,15 +2,15 @@
 package Operaciones;
 
 /**
- * Proporciona métodos basicos para opoeraciones aritméticas.
+ * Proporciona métodos básicos para opoeraciones aritméticas.
  */
 public class Operaciones {
-    //Constructor vacío
     
     /**
-     * Suma dos números. 
-     * @param a Primer número.
-     * @param b Segundo número.
+     * Suma dos números
+     * 
+     * @param a Primer número
+     * @param b Segundo número
      * @return Suma de a y b
      */
     public int sumar(int a , int b){
@@ -19,8 +19,9 @@ public class Operaciones {
     
     /**
      * Resta dos números
-     * @param a Primer número.
-     * @param b Segundo número.
+     * 
+     * @param a Primer número
+     * @param b Segundo número
      * @return Diferencia entre a y b 
      */
     public int restar(int a , int b){
@@ -28,9 +29,10 @@ public class Operaciones {
     }
     
     /**
-     * Multiplica dos números.
-     * @param a Primer número.
-     * @param b Segundo número.
+     * Multiplica dos números
+     * 
+     * @param a Primer número
+     * @param b Segundo número
      * @return Producto de a y b
      */
     public int multiplicar(int a , int b){
@@ -38,7 +40,8 @@ public class Operaciones {
     }
     
     /**
-     * Divide un número por otro.
+     * Divide un número por otro
+     * 
      * @param a Dividendo
      * @param b Divisor
      * @return Cociente de a y b
@@ -52,7 +55,7 @@ public class Operaciones {
     }
     
     /**
-     * Calcular el porcentaje de un número.
+     * Calcular el porcentaje de un número
      * @param b Número para calcular el porcentaje
      * @return Porcentaje de b
      */

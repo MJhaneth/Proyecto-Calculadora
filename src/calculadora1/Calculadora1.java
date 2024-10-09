@@ -19,7 +19,7 @@ public class Calculadora1 {
     /**
      * Constructor de la clase Calculadora1.
      * 
-     * @param user Nombre del usuario que a iniciado sesión
+     * @param user Nombre del usuario que ha iniciado sesión
      */
     public Calculadora1(String user) {
         this.usuario = user;  

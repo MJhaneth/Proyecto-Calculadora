@@ -8,14 +8,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * Gestiona la creacion y modificación de archivos de texto.
+ * Proporciona la creación y modificación de archivos de texto.
  */
 public class Archivos  {
     private String nombre;
     private File archivo;
     
     /**
-     * Constructor que inicializa el nombre del Archivo.
+     * Constructor que inicializa el nombre del archivo.
+     * 
      * @param nombre Nombre del archivo
      */
     public Archivos(String nombre)  {
@@ -24,6 +25,7 @@ public class Archivos  {
     
     /**
      * Crea un archivo en la ruta especificada.
+     * 
      * @param ruta Ubicación del nuevo archivo
      * @throws IOException Si ocurre un error al crear el archivo
      */
@@ -43,6 +45,7 @@ public class Archivos  {
     
     /**
      * Añade una línea de texto al archivo.
+     * 
      * @param linea Línea de texto a añadir
      * @return true si se añadió correctamente, false en caso de error
      */
@@ -66,6 +69,7 @@ public class Archivos  {
     
     /**
      * Elimina y recrea el archivo para limpiarlo.
+     * 
      * @return true si se limpia correctamente, false en caso error
      */
     public boolean limpiarArchivo(){
@@ -81,7 +85,7 @@ public class Archivos  {
     }
 
     /**
-     * Establece un nuevo nombre para el archivo.
+     * Asigna un nuevo nombre para el archivo.
      * 
      * @param nombre Nuevo nombre del archivo
      */
@@ -98,7 +102,7 @@ public class Archivos  {
         return archivo;
     }
 
-    /** Establece el archivo.
+    /** Asigna el archivo.
      * 
      * @param archivo Nuevo archivo
      */

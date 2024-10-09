@@ -34,12 +34,13 @@ public class Register implements ActionListener {
 
         frame.setSize(300, 250);
         frame.setLayout(null);
-        frame.setLocationRelativeTo(null); // Centrar la ventana
+        frame.setLocationRelativeTo(null);
 
         JLabel usuarioLabel = new JLabel("Usuario:");
         JLabel passwordLabel = new JLabel("Contraseña:");
         JLabel confirmPasswordLabel = new JLabel("Confirme Contraseña:");
 
+        // Posicionar componentes
         usuarioLabel.setBounds(30, 20, 100, 30);
         usuarioField.setBounds(150, 20, 120, 30);
         passwordLabel.setBounds(30, 60, 100, 30);
@@ -49,6 +50,7 @@ public class Register implements ActionListener {
         registerButton.setBounds(30, 150, 120, 30);
         cancelButton.setBounds(160, 150, 120, 30);
 
+        // Anadir componentes a la ventana
         frame.add(usuarioLabel);
         frame.add(usuarioField);
         frame.add(passwordLabel);
@@ -58,8 +60,9 @@ public class Register implements ActionListener {
         frame.add(registerButton);
         frame.add(cancelButton);
 
+        // Asignar los ActionListeners a los botones
         registerButton.addActionListener(this);
-        cancelButton.addActionListener(e -> frame.dispose()); // Acción para el botón de cancelar
+        cancelButton.addActionListener(e -> frame.dispose()); 
 
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -79,6 +82,7 @@ public class Register implements ActionListener {
         String contraseña = new String(passwordField.getPassword()).trim();
         String confirmPassword = new String(confirmPasswordField.getPassword()).trim();
 
+        // Validar que las contraseñas coincidan
         if (!contraseña.equals(confirmPassword)) {
             JOptionPane.showMessageDialog(frame, "Las contraseñas no coinciden. Inténtalo de nuevo.");
             return;

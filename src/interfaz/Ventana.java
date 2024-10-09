@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.io.File;
 
 /**
- * Representa una interfaz gráfica de usuario para una calculadora.
+ * Proporciona una interfaz gráfica de usuario para una calculadora.
  * Esta clase permite realizar operaciones matemáticas básicas, mostrar y gestionar
  * operaciones previamente realizadas, y guardar los resultados en un archivo de texto.
  */
@@ -75,7 +75,6 @@ public class Ventana implements ActionListener{
     private void iniciar(String usuario) throws IOException {
         
         this.documento.create("C:\\Proyectos\\Calculadora1\\src\\data\\data.txt");
-        //this.documento.create("..\\data\\data.txt");
         
         //Configuración del JFrame
         frame.setSize(310, 500);
@@ -87,15 +86,19 @@ public class Ventana implements ActionListener{
         frame.getContentPane().setBackground(new Color(0, 38, 77));
         frame.setVisible(true);
         
+        // Definición de colores
         Color buttonBackgroundDark = new Color(64, 72, 87);
         Color buttonBackgroundRed = new Color(235, 73, 86);
         Color buttonTextWhite = Color.WHITE;
         Color buttontexoper = new Color(51, 153, 102);
         Color buttonOperationColor = new Color(0, 0, 102);
+        
+        // Configuración del botón para mostrar operaciones
         mostrarOperacionesButton.addActionListener(e -> mostrarOperaciones());
         mostrarOperacionesButton.setBounds(125, 100, 150, 25);
         frame.add(mostrarOperacionesButton);
 
+        // Configuración de botones y su apariencia
         eliminarTodo.setText("AC");
         eliminar.setText("C");
         
@@ -137,6 +140,7 @@ public class Ventana implements ActionListener{
             boton.setFont(fuente);
         }
         
+        // Configuración de la posición de los botones
         sumar.setLocation(155, 135);
         restar.setLocation(220,135);
         multiplicar.setLocation(220, 200);
@@ -156,7 +160,7 @@ public class Ventana implements ActionListener{
         num9.setLocation(155,200);
         
         
-        //Añadiendo botones al JFrame
+        //Añadir botones al JFrame
         frame.add(sumar);
         frame.add(restar);
         frame.add(multiplicar);
@@ -186,6 +190,7 @@ public class Ventana implements ActionListener{
         eliminar.setLocation(90,135);
         frame.add(eliminar);
         
+        // Asignar los ActionListeners a los botones
         eliminarTodo.addActionListener(this);
         eliminar.addActionListener(this);
         sumar.addActionListener(this);

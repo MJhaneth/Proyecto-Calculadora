@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 
 /**
- * Representa un botón circular personalizado, basado en la clase JButton.
+ * Proporciona un botón circular personalizado, basado en la clase JButton.
  * Se personalizan los métodos de pintura, borde y verificación de clics para que el
  * botón se comporte visualmente como un círculo.
  */
@@ -24,15 +24,17 @@ public class botonCircular extends JButton {
     }
 
     /**
-     * Dibuja el fondo del botón como un óvalo relleno (circular).
+     * Sobrescribe el método para pintar el componente. Dibuja el fondo del botón como un óvalo relleno (circular).
      *
-     * @param g El objeto Graphics que se usa para pintar el botón.
+     * @param g El objeto Graphics que se usa para dibujar el botón.
      */
     @Override
     protected void paintComponent(Graphics g) {
         if (getModel().isArmed()) {
+            // Cambia el color cuando el botón está presionado
             g.setColor(Color.LIGHT_GRAY);
         } else {
+            // Usa el color de fondo predeterminado
             g.setColor(getBackground());
         }
         g.fillOval(0, 0, getWidth() - 1, getHeight() - 1);
@@ -40,9 +42,10 @@ public class botonCircular extends JButton {
     }
 
     /**
+     * Sobrescribe el método para pintar el borde del botón.
      * Dibujar el borde circular del botón.
      *
-     * @param g El objeto Graphics que se usa para pintar el borde del botón.
+     * @param g El objeto Graphics que se usa para dibujar el borde del botón.
      */
     @Override
     protected void paintBorder(Graphics g) {

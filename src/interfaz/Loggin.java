@@ -15,7 +15,7 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 /**
- * Gestiona la interfaz gráfica para el inicio de sesión de usuarios.
+ * Proporciona la interfaz gráfica para el inicio de sesión de usuarios.
  * Permite al usuario acceder ingresando su nombre de usuario y contraseña.
  * También ofrece opciones para registrarse o cancelar el inicio de sesión.
  * 
@@ -27,14 +27,22 @@ public class Loggin implements ActionListener {
      * Ventana principal de interfaz gráfica.
      */
     JFrame frame = new JFrame("Iniciar Sesión");
+    
+    /**
+     * Etiquetas y campos de texto utilizados en la interfaz gráfica.
+     */
     JLabel iniciarSesion = new JLabel("INICIAR SESION");
     JLabel usuarioLabel = new JLabel("Usuario: ");
     JLabel passwordLabel = new JLabel("Password: ");
     JTextField usuarioField = new JTextField();
     JPasswordField passwordField = new JPasswordField();
+    
+    /**
+     * Botones utilizados en la interfaz.
+     */
     JButton registrarseButton = new JButton("Registrarse");
     JButton accederButton = new JButton("Acceder");
-    JButton cancelarButton = new JButton("Cancelar"); // Nuevo botón
+    JButton cancelarButton = new JButton("Cancelar"); 
 
     /**
      * HashMap que almacena los usuarios y sus contraseñas.
@@ -73,12 +81,14 @@ public class Loggin implements ActionListener {
 
         registrarseButton.setBounds(50, 180, 120, 30);
         accederButton.setBounds(200, 180, 120, 30);
-        cancelarButton.setBounds(125, 220, 120, 30); // Posicionar el botón Cancelar
+        cancelarButton.setBounds(125, 220, 120, 30); 
         
+        //Asignar los ActionListeners a los botones
         registrarseButton.addActionListener(this);
         accederButton.addActionListener(this);
-        cancelarButton.addActionListener(e -> frame.dispose()); // Acción para el botón Cancelar
+        cancelarButton.addActionListener(e -> frame.dispose()); 
         
+        //Anadir componentes a la ventana      
         frame.add(iniciarSesion);
         frame.add(usuarioLabel);
         frame.add(usuarioField);
@@ -86,7 +96,7 @@ public class Loggin implements ActionListener {
         frame.add(passwordField);
         frame.add(registrarseButton);
         frame.add(accederButton);
-        frame.add(cancelarButton); // Agregar el botón Cancelar
+        frame.add(cancelarButton); 
         
         frame.setVisible(true);
     }
@@ -115,6 +125,7 @@ public class Loggin implements ActionListener {
     
     /**
      * Método que responde a los eventos de los botones de la interfaz.
+     * Se encarga de validar las credenciales de acceso del usuario.
      * 
      * @param e El evento generado por el botón presionado.
      */
@@ -124,30 +135,34 @@ public class Loggin implements ActionListener {
             String user = usuarioField.getText().trim();
             String pass = new String(passwordField.getPassword()).trim();
 
+            //Validar exitencia, contraseña y inicio de sesion exitoso del usuario
             if (!usersDB.containsKey(user)) {
                 JOptionPane.showMessageDialog(frame, "El usuario no existe.");
             } else if (!usersDB.get(user).equals(pass)) {
                 JOptionPane.showMessageDialog(frame, "Error en la contraseña del usuario.");
             } else {
                 JOptionPane.showMessageDialog(frame, "Inicio de sesión exitoso");
-                frame.dispose();
+                frame.dispose(); // Cerrar la ventana de Loggin
                 try {
-                    new Ventana(user);
+                    new Ventana(user); // Abrir la ventana de Register
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
             }
-        } else if (e.getSource() == registrarseButton) {
-            frame.dispose();
-            new Register(); // Pasar la instancia de Loggin a Register
+        }
+        // Redirige al usuario a la ventana de Register de nuevos usuarios.
+
+        else if (e.getSource() == registrarseButton) {
+            frame.dispose(); // Cierra la ventana de inicio de sesión actual
+            new Register(); // Abre una nueva ventana para el Register de usuarios
         }
     }
     
     /**
-     * Recarga los usuarios desde el archivo de texto.
+     * Este método que recarga los usuarios desde el archivo de texto.
      */
     public void refreshUsers() {
-        loadUsers(); // Recargar usuarios desde el archivo
+        loadUsers();
     }
     
     /**
