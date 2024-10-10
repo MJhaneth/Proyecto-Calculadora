@@ -19,7 +19,7 @@ y guarda un registro de las operaciones realizadas, vinculándolas con el usuari
 
 ## Capturas de pantalla
 
-![Pantalla de Login](src/imagenes/login.png)
+![Pantalla de Login](src/imagenes/login.png.png)
 ![Pantalla de Registro](src/imagenes/resgistro.png)
 ![Pantalla de Calculadora](src/imagenes/calculadora.png)
 
