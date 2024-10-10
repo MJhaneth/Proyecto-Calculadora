@@ -25,7 +25,7 @@ Esta es la pantalla de Login de la aplicación:
 
 Esta es la pantalla de Registro de la aplicación:
 
-![Pantalla de Registro](src/imagenes/resgistro.png.png)
+![Pantalla de Registro](src/imagenes/registro.png.png).
 
 Esta es la pantalla de Calculadora de la aplicación:
 
