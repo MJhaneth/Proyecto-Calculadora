@@ -19,9 +19,9 @@ y guarda un registro de las operaciones realizadas, vinculándolas con el usuari
 
 ## Capturas de pantalla
 
-![Pantalla de Login](imagenes/login.png)
-![Pantalla de Registro](imagenes/resgistro.png)
-![Pantalla de Calculadora](imagenes/calculadora.png)
+![Pantalla de Login](src/imagenes/login.png)
+![Pantalla de Registro](src/imagenes/resgistro.png)
+![Pantalla de Calculadora](src/imagenes/calculadora.png)
 
 ## Instalación
 
