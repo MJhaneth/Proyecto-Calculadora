@@ -20,10 +20,15 @@ y guarda un registro de las operaciones realizadas, vinculándolas con el usuari
 ## Capturas de pantalla
 
 Esta es la pantalla de Login de la aplicación:
+
 ![Pantalla de Login](src/imagenes/login.png.png)
+
 Esta es la pantalla de Registro de la aplicación:
+
 ![Pantalla de Registro](src/imagenes/resgistro.png.png)
+
 Esta es la pantalla de Calculadora de la aplicación:
+
 ![Pantalla de Calculadora](src/imagenes/calculadora.png.png)
 
 ## Instalación
