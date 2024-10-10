@@ -19,9 +19,9 @@ y guarda un registro de las operaciones realizadas, vinculándolas con el usuari
 
 ## Capturas de pantalla
 
-![Pantalla de Login](ruta/a/la/captura.png)
-![Pantalla de Registro](ruta/a/la/captura.png)
-![Pantalla de Calculadora](ruta/a/la/captura.png)
+![Pantalla de Login](imagenes/login.png)
+![Pantalla de Registro](imagenes/resgistro.png)
+![Pantalla de Calculadora](imagenes/calculadora.png)
 
 ## Instalación
 
@@ -47,10 +47,25 @@ Sigue los pasos a continuación para instalar y ejecutar el proyecto en tu entor
 3. Abre el proyecto:
 4. Compila y ejecuta el proyecto. Si estás usando un IDE como NetBeans, simplemente selecciona "Ejecutar" en el menú.
    
-**Uso**
+## Uso
+
 Al ejecutar la aplicación, se mostrará una pantalla de inicio de sesión.
 Primero registrate, ya que eres usuario nuevo.
 Ingresa tus credenciales guardados para acceder a la calculadora.
 Una vez dentro, puedes realizar operaciones aritméticas básicas.
 El historial de operaciones realizas puedes ver presionando en boton "Resultados".
 Cierra la aplicación cuando termine.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas 
+
+## Autores 
+
+**Autores**: Proyecto desarrollado por el equipo **TechGO**
+
+## Créditos 
+- **Exp4j**: Se utilizo la biblioteca [Exp4j](https://www.objecthunter.net/exp4j/) para realizar la evaluación de expresiones matemáticas
+- **JDK 22**: El proyecto fue desarrollado utilizando [Java Development Kit (JDK) 22](https://jdk.java.net/22/), que nos proporcionó las herramientas necesarias para compilar y ejecutar la aplicación.
+- **Biblioteca Swing** - Para la creación de la interfaz gráfica (GUI)
+- Inspirado en el diseño de calculadoras clásicas.
