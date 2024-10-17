@@ -2,7 +2,7 @@
 package Operaciones;
 
 /**
- * Proporciona métodos básicos para opoeraciones aritméticas.
+ * Proporciona métodos básicos para operaciones aritméticas.
  */
 public class Operaciones {
     
